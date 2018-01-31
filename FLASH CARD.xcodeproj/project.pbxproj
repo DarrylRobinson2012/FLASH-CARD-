@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4621635E202229E800D6277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621635D202229E800D6277E /* AppDelegate.swift */; };
+		46216360202229E800D6277E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621635F202229E800D6277E /* ViewController.swift */; };
+		46216363202229E800D6277E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46216361202229E800D6277E /* Main.storyboard */; };
+		46216365202229E800D6277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46216364202229E800D6277E /* Assets.xcassets */; };
+		46216368202229E800D6277E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46216366202229E800D6277E /* LaunchScreen.storyboard */; };
+		46216373202229E900D6277E /* FLASH_CARDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216372202229E900D6277E /* FLASH_CARDTests.swift */; };
+		4621637E202229E900D6277E /* FLASH_CARDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621637D202229E900D6277E /* FLASH_CARDUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4621636F202229E800D6277E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46216352202229E800D6277E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46216359202229E800D6277E;
+			remoteInfo = "FLASH CARD";
+		};
+		4621637A202229E900D6277E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46216352202229E800D6277E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46216359202229E800D6277E;
+			remoteInfo = "FLASH CARD";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4621635A202229E800D6277E /* FLASH CARD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLASH CARD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4621635D202229E800D6277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4621635F202229E800D6277E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46216362202229E800D6277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46216364202229E800D6277E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46216367202229E800D6277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46216369202229E800D6277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4621636E202229E800D6277E /* FLASH CARDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FLASH CARDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46216372202229E900D6277E /* FLASH_CARDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLASH_CARDTests.swift; sourceTree = "<group>"; };
+		46216374202229E900D6277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46216379202229E900D6277E /* FLASH CARDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FLASH CARDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4621637D202229E900D6277E /* FLASH_CARDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLASH_CARDUITests.swift; sourceTree = "<group>"; };
+		4621637F202229E900D6277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46216357202229E800D6277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4621636B202229E800D6277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46216376202229E900D6277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46216351202229E800D6277E = {
+			isa = PBXGroup;
+			children = (
+				4621635C202229E800D6277E /* FLASH CARD */,
+				46216371202229E900D6277E /* FLASH CARDTests */,
+				4621637C202229E900D6277E /* FLASH CARDUITests */,
+				4621635B202229E800D6277E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4621635B202229E800D6277E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4621635A202229E800D6277E /* FLASH CARD.app */,
+				4621636E202229E800D6277E /* FLASH CARDTests.xctest */,
+				46216379202229E900D6277E /* FLASH CARDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4621635C202229E800D6277E /* FLASH CARD */ = {
+			isa = PBXGroup;
+			children = (
+				4621635D202229E800D6277E /* AppDelegate.swift */,
+				4621635F202229E800D6277E /* ViewController.swift */,
+				46216361202229E800D6277E /* Main.storyboard */,
+				46216364202229E800D6277E /* Assets.xcassets */,
+				46216366202229E800D6277E /* LaunchScreen.storyboard */,
+				46216369202229E800D6277E /* Info.plist */,
+			);
+			path = "FLASH CARD";
+			sourceTree = "<group>";
+		};
+		46216371202229E900D6277E /* FLASH CARDTests */ = {
+			isa = PBXGroup;
+			children = (
+				46216372202229E900D6277E /* FLASH_CARDTests.swift */,
+				46216374202229E900D6277E /* Info.plist */,
+			);
+			path = "FLASH CARDTests";
+			sourceTree = "<group>";
+		};
+		4621637C202229E900D6277E /* FLASH CARDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4621637D202229E900D6277E /* FLASH_CARDUITests.swift */,
+				4621637F202229E900D6277E /* Info.plist */,
+			);
+			path = "FLASH CARDUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46216359202229E800D6277E /* FLASH CARD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46216382202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARD" */;
+			buildPhases = (
+				46216356202229E800D6277E /* Sources */,
+				46216357202229E800D6277E /* Frameworks */,
+				46216358202229E800D6277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FLASH CARD";
+			productName = "FLASH CARD";
+			productReference = 4621635A202229E800D6277E /* FLASH CARD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4621636D202229E800D6277E /* FLASH CARDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46216385202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARDTests" */;
+			buildPhases = (
+				4621636A202229E800D6277E /* Sources */,
+				4621636B202229E800D6277E /* Frameworks */,
+				4621636C202229E800D6277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46216370202229E800D6277E /* PBXTargetDependency */,
+			);
+			name = "FLASH CARDTests";
+			productName = "FLASH CARDTests";
+			productReference = 4621636E202229E800D6277E /* FLASH CARDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46216378202229E900D6277E /* FLASH CARDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46216388202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARDUITests" */;
+			buildPhases = (
+				46216375202229E900D6277E /* Sources */,
+				46216376202229E900D6277E /* Frameworks */,
+				46216377202229E900D6277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4621637B202229E900D6277E /* PBXTargetDependency */,
+			);
+			name = "FLASH CARDUITests";
+			productName = "FLASH CARDUITests";
+			productReference = 46216379202229E900D6277E /* FLASH CARDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46216352202229E800D6277E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Darryl Robinson ";
+				TargetAttributes = {
+					46216359202229E800D6277E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4621636D202229E800D6277E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46216359202229E800D6277E;
+					};
+					46216378202229E900D6277E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46216359202229E800D6277E;
+					};
+				};
+			};
+			buildConfigurationList = 46216355202229E800D6277E /* Build configuration list for PBXProject "FLASH CARD" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46216351202229E800D6277E;
+			productRefGroup = 4621635B202229E800D6277E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46216359202229E800D6277E /* FLASH CARD */,
+				4621636D202229E800D6277E /* FLASH CARDTests */,
+				46216378202229E900D6277E /* FLASH CARDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46216358202229E800D6277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46216368202229E800D6277E /* LaunchScreen.storyboard in Resources */,
+				46216365202229E800D6277E /* Assets.xcassets in Resources */,
+				46216363202229E800D6277E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4621636C202229E800D6277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46216377202229E900D6277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46216356202229E800D6277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46216360202229E800D6277E /* ViewController.swift in Sources */,
+				4621635E202229E800D6277E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4621636A202229E800D6277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46216373202229E900D6277E /* FLASH_CARDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46216375202229E900D6277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4621637E202229E900D6277E /* FLASH_CARDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46216370202229E800D6277E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46216359202229E800D6277E /* FLASH CARD */;
+			targetProxy = 4621636F202229E800D6277E /* PBXContainerItemProxy */;
+		};
+		4621637B202229E900D6277E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46216359202229E800D6277E /* FLASH CARD */;
+			targetProxy = 4621637A202229E900D6277E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46216361202229E800D6277E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46216362202229E800D6277E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46216366202229E800D6277E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46216367202229E800D6277E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46216380202229E900D6277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46216381202229E900D6277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46216383202229E900D6277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARD/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46216384202229E900D6277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARD/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46216386202229E900D6277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLASH CARD.app/FLASH CARD";
+			};
+			name = Debug;
+		};
+		46216387202229E900D6277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLASH CARD.app/FLASH CARD";
+			};
+			name = Release;
+		};
+		46216389202229E900D6277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARDUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FLASH CARD";
+			};
+			name = Debug;
+		};
+		4621638A202229E900D6277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B4H9U4LTML;
+				INFOPLIST_FILE = "FLASH CARDUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HJK.FLASH-CARDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FLASH CARD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46216355202229E800D6277E /* Build configuration list for PBXProject "FLASH CARD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46216380202229E900D6277E /* Debug */,
+				46216381202229E900D6277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46216382202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46216383202229E900D6277E /* Debug */,
+				46216384202229E900D6277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46216385202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46216386202229E900D6277E /* Debug */,
+				46216387202229E900D6277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46216388202229E900D6277E /* Build configuration list for PBXNativeTarget "FLASH CARDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46216389202229E900D6277E /* Debug */,
+				4621638A202229E900D6277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46216352202229E800D6277E /* Project object */;
+}
