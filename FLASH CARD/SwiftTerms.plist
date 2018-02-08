@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <array>
+          <string>Parameter</string>
+          <string>The optional input that functions takes inn  as typed values.</string>
+    </array>
+    <array>
+          <string>Arrays</string>
+          <string>Ordered collections of values. </string>
+    </array>
+    <array>
+          <string>As</string>
+          <string>Operator that is used to convert one type to another when the complier gaurantees the success of a desried cast.</string>
+    </array>
+    <array>
+          <string>Unicode</string>
+          <string>An international standard for encoding, reperesenting, and processing text in different writing systems. </string>
+    </array>
+    <array>
+          <string>.Intersection</string>
+          <string>Creates a new set with only the values common to both sets.  </string>
+    </array>
+    <array>
+          <string>If Statement</string>
+          <string>The statement has a single if  condition. It executes a set of statements only if that conditions is true. </string>
+    </array>
+    <array>
+          <string>Repeat While Loop</string>
+          <string>Performs a single pass through the loops block first, before considering the loops condition. </string>
+    </array>
+    <array>
+          <string>Dictionary</string>
+          <string>Unordered collections of key - value associations.</string>
+    </array>
+    <array>
+          <string>.Subtracting</string>
+          <string>Creates a new set with values not inn the specified set. </string>
+    </array>
+    <array>
+          <string>Break </string>
+          <string>Ends execution of an entire control statement immediately. </string>
+    </array>
+    <array>
+          <string>Types</string>
+          <string>Int, Double, Float, Bool, String. </string>
+    </array>
+    <array>
+          <string>Remainder</string>
+          <string>Works out how many multiples of b can fit inside a and returens the values that is left over. a%b</string>
+    </array>
+    <array>
+          <string>Logical Operators</string>
+          <string>Modify or combine Boolean logic values. !a, a&amp;&amp; b, a||b </string>
+    </array>
+    <array>
+          <string>Set</string>
+          <string>Unordered collections of unique values.</string>
+    </array>
+    <array>
+          <string>Failable Initializer </string>
+          <string>A method that can return nil as an option. </string>
+    </array>
+    <array>
+          <string>Try</string>
+          <string>Calls out the fact that something may lead to an error. </string>
+    </array>
+    <array>
+          <string>Nil- Coalescing Operator</string>
+          <string>Unwraps an optional value or a nil value. </string>
+    </array>
+    <array>
+          <string>Reference Type</string>
+          <string>A reference to the same existing instace is being used.</string>
+    </array>
+    <array>
+          <string>XML</string>
+          <string>Extensible Markup Language - a set of rules for encoding documents in both machine and human format. </string>
+    </array>
+    <array>
+          <string>Type Method </string>
+          <string>Method that’ defines on the type itself rather than an instance .</string>
+    </array>
+    <array>
+          <string>Property List</string>
+          <string>Organizes data into named values and listof values. </string>
+    </array>
+    <array>
+          <string>Enumeration</string>
+          <string>Defines a common type for a group of related values and enables you to work with those values in a type safe way within your code.</string>
+    </array>
+    <array>
+          <string>.SymmetricDifference</string>
+          <string>Creates a new set with values in either, but not both. </string>
+    </array>
+    <array>
+          <string>While Loops</string>
+          <string>Performs a set of statements until a condition becomes false.</string>
+    </array>
+    <array>
+          <string>Structures</string>
+          <string>General-purpose, flexible constructs that become the building blocks of your programs code. &quot;Value Type&quot;</string>
+    </array>
+    <array>
+          <string>Classes</string>
+          <string>General-purpose, flexible constructs that become the building blocks of your programs code. &quot;Reference TYPE&quot; </string>
+    </array>
+    <array>
+          <string>AS?</string>
+          <string>This Operator allows you to check if an object of one type is castable to another. </string>
+    </array>
+    <array>
+          <string>For In Loop</string>
+          <string>Loop to iterate over a sequence such as items in an array, ranges of numbers, or characters in a string.</string>
+    </array>
+    <array>
+          <string>Instance</string>
+          <string>Is an object.</string>
+    </array>
+    <array>
+          <string>Value Type</string>
+          <string>A type where a value is copied when it is assigned to a variable or constant, or when it is passed to a function. </string>
+    </array>
+    <array>
+          <string>One Side Range</string>
+          <string>The operator has a value on only one side.  [2...]</string>
+    </array>
+    <array>
+          <string>Variadic</string>
+          <string>Accepts zero or more values of a specifc type. </string>
+    </array>
+    <array>
+          <string>Functions</string>
+          <string>Self-contained chunks of code that perform a specific task.</string>
+    </array>
+    <array>
+          <string>Optional Binding</string>
+          <string>Optional Binding is used to find out whether an optional contains a value.</string>
+    </array>
+    <array>
+          <string>Return Type</string>
+          <string>Optional value that the function will pass back. </string>
+    </array>
+    <array>
+          <string>Continue </string>
+          <string>Tells a loop to stop what it is doing and start again at the beginning of the next interation.</string>
+    </array>
+    <array>
+          <string>Closures </string>
+          <string>Self-contained blocks of functionality that can be passed around and used in code.</string>
+    </array>
+    <array>
+          <string>Ternary Conditional Operator</string>
+          <string>A special operator with three parts which takes the from: question? Asnwer1 Answer2.</string>
+    </array>
+    <array>
+          <string>Half Open Range Operator </string>
+          <string>One sided form that only has the final value. [..&lt;2]</string>
+    </array>
+    <array>
+          <string>Collection Types</string>
+          <string>Array, Set, Dictionary </string>
+    </array>
+    <array>
+          <string>AS!</string>
+          <string>Will result if in a crash if cast fails.</string>
+    </array>
+    <array>
+          <string>Fallthrough </string>
+          <string>Causes code execution to move directly to the statements inside the next case no matter what.</string>
+    </array>
+</array>
+</plist>

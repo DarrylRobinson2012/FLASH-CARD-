@@ -18,6 +18,7 @@
 		46216391202382C800D6277E /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 46216390202382C800D6277E /* Back.png */; };
 		462163932023D09400D6277E /* incorrect.ico in Resources */ = {isa = PBXBuildFile; fileRef = 462163922023D09400D6277E /* incorrect.ico */; };
 		462163952023D27B00D6277E /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 462163942023D27B00D6277E /* correct.png */; };
+		46219F8C202CFED200B01CAA /* SwiftTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46219F8B202CFED200B01CAA /* SwiftTerms.plist */; };
 		467117B4202A4A79001E2244 /* DisplayDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467117B3202A4A79001E2244 /* DisplayDefinition.swift */; };
 		46E314F9202A548600E85FF9 /* CardProvider .swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E314F8202A548600E85FF9 /* CardProvider .swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		46216390202382C800D6277E /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back.png; path = ../../../../Downloads/Back.png; sourceTree = "<group>"; };
 		462163922023D09400D6277E /* incorrect.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = incorrect.ico; path = ../../../../Downloads/incorrect.ico; sourceTree = "<group>"; };
 		462163942023D27B00D6277E /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.png; path = ../../../../Downloads/correct.png; sourceTree = "<group>"; };
+		46219F8B202CFED200B01CAA /* SwiftTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftTerms.plist; sourceTree = "<group>"; };
 		467117B3202A4A79001E2244 /* DisplayDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDefinition.swift; sourceTree = "<group>"; };
 		46E314F8202A548600E85FF9 /* CardProvider .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardProvider .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4621635D202229E800D6277E /* AppDelegate.swift */,
+				46219F8B202CFED200B01CAA /* SwiftTerms.plist */,
 				4621635F202229E800D6277E /* ViewController.swift */,
 				46E314F8202A548600E85FF9 /* CardProvider .swift */,
 				467117B3202A4A79001E2244 /* DisplayDefinition.swift */,
@@ -252,6 +255,7 @@
 			files = (
 				46216365202229E800D6277E /* Assets.xcassets in Resources */,
 				462163932023D09400D6277E /* incorrect.ico in Resources */,
+				46219F8C202CFED200B01CAA /* SwiftTerms.plist in Resources */,
 				462163952023D27B00D6277E /* correct.png in Resources */,
 				4621638D20222C1800D6277E /* indexcard.png in Resources */,
 				46216391202382C800D6277E /* Back.png in Resources */,
