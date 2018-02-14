@@ -7,7 +7,23 @@
 //
 
 import Foundation
+import UIKit
 //Errora that could happen while pulling the data
+//Rules for flash cards
+protocol cards {
+    var term: String  { get }
+    var definition: String { get }
+    // var UI: Int { get }
+    
+}
+//Actual flash cards
+struct flashCards: cards {
+    var term: String
+    var definition: String
+    // var UI: Int
+    
+}
+
 enum InvenoryError: Error {
     case InvalidResource
     case ConversionError
@@ -33,62 +49,54 @@ class inventoryUnarchiver {
         
         var inventory: [flashCards] = []
         for value in array {
-            if let term = value["term"] as? String, let definition = value["definition"] as? String, let UI = value["UI"] as? Int {
-                let card = flashCards(term: term, definition: definition, UI: UI )
+            if let term = value["terms"] as? String, let definition = value["definitions"] as? String {
+                let card = flashCards(term: term, definition: definition )
                 inventory.append(card)
             }
         }
         return inventory
     }
 }
-//Rules for flash cards
-protocol cards {
-    var term: String  { get }
-    var definition: String { get }
-    var UI: Int { get }
-    
-}
-//Actual flash cards
-struct flashCards: cards {
-    var term: String
-    var definition: String
-    var UI: Int
-
-}
 
 
 //Rules for each round
 protocol quizRules {
-    var cardKeyword: flashCards {get set }
-    var cardTerm: flashCards { get set }
-    var uniqueIdentifier1: Int {get}
-    var uniqueIdentifier2:  Int { get }
+    var t1: flashCards {get set}
+    var d1: flashCards  {get set}
+    var cardKeyword: String {get set }
+    var cardTerm: String { get set }
+    //var uniqueIdentifier1: Int {get}
+    //var uniqueIdentifier2:  Int { get }
     
 
 }
 //Actual quiz
 class Quiz: quizRules {
-    var cardKeyword: flashCards
-    var cardTerm: flashCards
-    var uniqueIdentifier1: Int
-    var uniqueIdentifier2: Int
+    var t1: flashCards
+    var d1: flashCards
+    var cardKeyword: String
+    var cardTerm: String
+    //var uniqueIdentifier1: Int
+    //var uniqueIdentifier2: Int
     
-    func check() -> Bool {
-        if uniqueIdentifier1 == uniqueIdentifier2 {
+    /*func check() -> Bool {
+        if  cardTerm.term == cardTerm.term {
             return true
         }else   {
             return false
         }
-    }
-        init(cardKeyword: flashCards, cardTerm: flashCards, uniqueIdentifier1: Int, uniqueIdentifier2: Int){
+    }*/
+    init(t1: flashCards, d1: flashCards, cardKeyword: String, cardTerm: String){
+            self.t1 = t1
+            self.d1 = d1
             self.cardKeyword = cardKeyword
             self.cardTerm = cardTerm
-            self.uniqueIdentifier1 = uniqueIdentifier1
-            self.uniqueIdentifier2 = uniqueIdentifier2
+           // self.uniqueIdentifier1 = uniqueIdentifier1
+            //self.uniqueIdentifier2 = uniqueIdentifier2
             
         }
-
-    }
+}
+    
 
 //RULES FOR EACH SESSION
 protocol session {
@@ -102,11 +110,11 @@ protocol session {
     func shuffleTheTerms(array: [flashCards]) -> [flashCards]
     func endQuiz()
     func nextCard()
-    func checkTerm() -> Bool
-    func doYouWantToSTOP()
+    func checkTerm()
+    func doYouWantToStop()
     }
 //The actual Study Session
-class studySession {
+class studySession: session {
     var card: [flashCards]
     var test: Quiz
     var wholecard: [flashCards]
@@ -120,7 +128,7 @@ class studySession {
         nextCard()
     }
     //shuffles the events
-    func shuffletheTerms(array: [flashCards]) -> [flashCards] {
+    func shuffleTheTerms(array: [flashCards]) -> [flashCards] {
         var tempArray = array
         var shuffled: [flashCards] = []
         for _  in 0..<tempArray.count
@@ -138,8 +146,8 @@ class studySession {
     //loads the next term
     func nextCard() {
         count += 1
-        card = shuffletheTerms(array: card)
-        test = Quiz(cardKeyword: card[0], cardTerm: card[0], uniqueIdentifier1: card[0].UI, uniqueIdentifier2: card[0].UI)
+        card = shuffleTheTerms(array: card)
+        test = Quiz(t1: card[0], d1: card[0], cardKeyword: card[0].term, cardTerm: card[0].definition)
         card.remove(at: 0)
         print(card)
        
@@ -148,13 +156,13 @@ class studySession {
         }
     }
         //check answer
-        func checkAnswer() -> Bool {
-            let result = test.check()
+    func checkTerm(){} //-> Bool {
+           /* let result = test.check()
             if result {
             
             }
             return test.check()
-    }
+    }*/
     //Ask the user do they want to stop
     func doYouWantToStop(){
     }
@@ -162,15 +170,11 @@ class studySession {
     init(card: [flashCards]) {
         self.card = card
         self.wholecard = card
-        self.test = Quiz(cardKeyword: card[0], cardTerm: card[0], uniqueIdentifier1: card[0].UI, uniqueIdentifier2: card[0].UI)
+        self.test = Quiz(t1: card[0], d1: card[0], cardKeyword: card[0].term, cardTerm: card[0].definition)
+    
     }
 }
     
-
-
-
-
-
 
 
 

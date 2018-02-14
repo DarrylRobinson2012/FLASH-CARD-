@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461D854C2030235100D52C5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D854B2030235100D52C5D /* ViewController.swift */; };
+		461D854E2030569100D52C5D /* termController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D854D2030569100D52C5D /* termController.swift */; };
+		461D85522030E9EB00D52C5D /* InsertTermController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D85512030E9EB00D52C5D /* InsertTermController.swift */; };
 		4621635E202229E800D6277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621635D202229E800D6277E /* AppDelegate.swift */; };
-		46216360202229E800D6277E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621635F202229E800D6277E /* ViewController.swift */; };
 		46216363202229E800D6277E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46216361202229E800D6277E /* Main.storyboard */; };
 		46216365202229E800D6277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46216364202229E800D6277E /* Assets.xcassets */; };
 		46216373202229E900D6277E /* FLASH_CARDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216372202229E900D6277E /* FLASH_CARDTests.swift */; };
@@ -18,9 +20,9 @@
 		46216391202382C800D6277E /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 46216390202382C800D6277E /* Back.png */; };
 		462163932023D09400D6277E /* incorrect.ico in Resources */ = {isa = PBXBuildFile; fileRef = 462163922023D09400D6277E /* incorrect.ico */; };
 		462163952023D27B00D6277E /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 462163942023D27B00D6277E /* correct.png */; };
-		46219F8C202CFED200B01CAA /* SwiftTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46219F8B202CFED200B01CAA /* SwiftTerms.plist */; };
+		4641689D20333B2C00E496E6 /* SwiftVocab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4641689C20333B2C00E496E6 /* SwiftVocab.plist */; };
 		467117B4202A4A79001E2244 /* DisplayDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467117B3202A4A79001E2244 /* DisplayDefinition.swift */; };
-		46E314F9202A548600E85FF9 /* CardProvider .swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E314F8202A548600E85FF9 /* CardProvider .swift */; };
+		46E314F9202A548600E85FF9 /* CardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E314F8202A548600E85FF9 /* CardProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461D854B2030235100D52C5D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		461D854D2030569100D52C5D /* termController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termController.swift; sourceTree = "<group>"; };
+		461D85512030E9EB00D52C5D /* InsertTermController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertTermController.swift; sourceTree = "<group>"; };
 		4621635A202229E800D6277E /* FLASH CARD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLASH CARD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4621635D202229E800D6277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4621635F202229E800D6277E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46216362202229E800D6277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46216364202229E800D6277E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46216369202229E800D6277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,9 +62,9 @@
 		46216390202382C800D6277E /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back.png; path = ../../../../Downloads/Back.png; sourceTree = "<group>"; };
 		462163922023D09400D6277E /* incorrect.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = incorrect.ico; path = ../../../../Downloads/incorrect.ico; sourceTree = "<group>"; };
 		462163942023D27B00D6277E /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.png; path = ../../../../Downloads/correct.png; sourceTree = "<group>"; };
-		46219F8B202CFED200B01CAA /* SwiftTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftTerms.plist; sourceTree = "<group>"; };
+		4641689C20333B2C00E496E6 /* SwiftVocab.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftVocab.plist; sourceTree = "<group>"; };
 		467117B3202A4A79001E2244 /* DisplayDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDefinition.swift; sourceTree = "<group>"; };
-		46E314F8202A548600E85FF9 /* CardProvider .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardProvider .swift"; sourceTree = "<group>"; };
+		46E314F8202A548600E85FF9 /* CardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				4621635D202229E800D6277E /* AppDelegate.swift */,
-				46219F8B202CFED200B01CAA /* SwiftTerms.plist */,
-				4621635F202229E800D6277E /* ViewController.swift */,
-				46E314F8202A548600E85FF9 /* CardProvider .swift */,
+				4641689C20333B2C00E496E6 /* SwiftVocab.plist */,
+				461D854B2030235100D52C5D /* ViewController.swift */,
+				46E314F8202A548600E85FF9 /* CardProvider.swift */,
 				467117B3202A4A79001E2244 /* DisplayDefinition.swift */,
+				461D85512030E9EB00D52C5D /* InsertTermController.swift */,
+				461D854D2030569100D52C5D /* termController.swift */,
 				4621638C20222C1700D6277E /* indexcard.png */,
 				4621638E202380D900D6277E /* Next.png */,
 				462163942023D27B00D6277E /* correct.png */,
@@ -255,7 +261,7 @@
 			files = (
 				46216365202229E800D6277E /* Assets.xcassets in Resources */,
 				462163932023D09400D6277E /* incorrect.ico in Resources */,
-				46219F8C202CFED200B01CAA /* SwiftTerms.plist in Resources */,
+				4641689D20333B2C00E496E6 /* SwiftVocab.plist in Resources */,
 				462163952023D27B00D6277E /* correct.png in Resources */,
 				4621638D20222C1800D6277E /* indexcard.png in Resources */,
 				46216391202382C800D6277E /* Back.png in Resources */,
@@ -285,10 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46216360202229E800D6277E /* ViewController.swift in Sources */,
 				4621635E202229E800D6277E /* AppDelegate.swift in Sources */,
 				467117B4202A4A79001E2244 /* DisplayDefinition.swift in Sources */,
-				46E314F9202A548600E85FF9 /* CardProvider .swift in Sources */,
+				461D854C2030235100D52C5D /* ViewController.swift in Sources */,
+				461D854E2030569100D52C5D /* termController.swift in Sources */,
+				461D85522030E9EB00D52C5D /* InsertTermController.swift in Sources */,
+				46E314F9202A548600E85FF9 /* CardProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

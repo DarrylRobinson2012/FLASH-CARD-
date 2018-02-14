@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var positioningLabel: UILabel!
     
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
