@@ -14,7 +14,8 @@ class view2: UIViewController {
     @IBOutlet weak var defintion: UITextView!
     @IBOutlet weak var view2ND: UIView!
     var quiz : studySession
-    @IBOutlet weak var DisplayTerm: UIButton!
+    var keyword: String?
+
     
     // Grabs the plist and converts it to a format the code accepts it.
     required init?(coder aDecoder: NSCoder) {
@@ -23,17 +24,21 @@ class view2: UIViewController {
             let array = try PlistConverter.array(fromFile: "SwiftVocab", ofType: "plist")
             let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
             quiz = studySession(card: termsList)
-        } catch let error {
+            } catch let error {
             
             fatalError("\(error)")
         }
         super.init(coder: aDecoder)
+    
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         quiz.nextCard()
         refreshDisplay()
+      
      
     
 
@@ -56,7 +61,7 @@ class view2: UIViewController {
     
  
     
-    @IBAction func nextRound(_ sender: Any){
+    func nextRound(){
             quiz.nextCard()
             refreshDisplay()
         }
@@ -67,7 +72,7 @@ class view2: UIViewController {
         dismiss(animated: true, completion: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "vocabView") as! UIViewController
         self.present(vc, animated: true, completion: nil)
-       
+       performSegue(withIdentifier: "vocabView", sender: self)
     }
     
     func showEmptyTerm(){
@@ -78,15 +83,26 @@ class view2: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? termController {
+            destination.term = keyword
+        }
+    }
+    
     func showStartQuiz() {
         view2ND.isHidden = false
         
     }
     
+    
+   
     func refreshDisplay() {
         defintion.text = quiz.test.cardTerm
+        keyword = quiz.test.cardKeyword
     }
-    
+
+        
+
     /*
     // MARK: - Navigation
 

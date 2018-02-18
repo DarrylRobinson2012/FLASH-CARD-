@@ -131,7 +131,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="90" y="223"/>
+            <point key="canvasLocation" x="89.673913043478265" y="221.73913043478262"/>
         </scene>
         <!--Term Controller-->
         <scene sceneID="7kd-ed-BIf">
@@ -287,6 +287,6 @@
         <image name="indexcard.png" width="262" height="157"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RPK-cO-Lg2"/>
+        <segue reference="WSB-7f-aVo"/>
     </inferredMetricsTieBreakers>
 </document>

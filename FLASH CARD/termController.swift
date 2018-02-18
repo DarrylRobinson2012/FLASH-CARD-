@@ -13,14 +13,30 @@ class termController: UIViewController {
     @IBOutlet weak var Next: UIButton!
     @IBOutlet weak var Definitionagain: UIButton!
     @IBOutlet weak var View4: UIImageView!
-    
+    var term: String?
+    var quiz : studySession
+    required init?(coder aDecoder: NSCoder) {
+        
+        do {
+            let array = try PlistConverter.array(fromFile: "SwiftVocab", ofType: "plist")
+            let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
+            quiz = studySession(card: termsList)
+        } catch let error {
+            
+            fatalError("\(error)")
+        }
+        super.init(coder: aDecoder)
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        refreshDisplay()
         // Do any additional setup after loading the view.
+        if let termTodisplay = term {
+            Term.text = termTodisplay
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +54,10 @@ class termController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Definition") as! UIViewController
         self.present(vc, animated: true, completion: nil)
         
+    }
+    
+    func refreshDisplay() {
+        Term.text = quiz.test.cardKeyword
     }
     /*
     // MARK: - Navigation
