@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+          <key>terms</key>
+          <string>Parameter</string>
+          <key>definitions</key>
+          <string>The optional input that functions takes inn  as typed values.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Arrays</string>
+          <key>definitions</key>
+          <string>Ordered collections of values. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>As</string>
+          <key>definitions</key>
+          <string>Operator that is used to convert one type to another when the complier gaurantees the success of a desried cast.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Unicode</string>
+          <key>definitions</key>
+          <string>An international standard for encoding, reperesenting, and processing text in different writing systems. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>.Intersection</string>
+          <key>definitions</key>
+          <string>Creates a new set with only the values common to both sets.  </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>If Statement</string>
+          <key>definitions</key>
+          <string>The statement has a single if  condition. It executes a set of statements only if that conditions is true. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Repeat While Loop</string>
+          <key>definitions</key>
+          <string>Performs a single pass through the loops block first, before considering the loops condition. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Dictionary</string>
+          <key>definitions</key>
+          <string>Unordered collections of key - value associations.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>.Subtracting</string>
+          <key>definitions</key>
+          <string>Creates a new set with values not inn the specified set. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Break </string>
+          <key>definitions</key>
+          <string>Ends execution of an entire control statement immediately. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Types</string>
+          <key>definitions</key>
+          <string>Int, Double, Float, Bool, String. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Remainder</string>
+          <key>definitions</key>
+          <string>Works out how many multiples of b can fit inside a and returens the values that is left over. a%b</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Logical Operators</string>
+          <key>definitions</key>
+          <string>Modify or combine Boolean logic values. !a, a&amp;&amp; b, a||b </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Set</string>
+          <key>definitions</key>
+          <string>Unordered collections of unique values.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Failable Initializer </string>
+          <key>definitions</key>
+          <string>A method that can return nil as an option. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Try</string>
+          <key>definitions</key>
+          <string>Calls out the fact that something may lead to an error. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Nil- Coalescing Operator</string>
+          <key>definitions</key>
+          <string>Unwraps an optional value or a nil value. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Reference Type</string>
+          <key>definitions</key>
+          <string>A reference to the same existing instace is being used.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>XML</string>
+          <key>definitions</key>
+          <string>Extensible Markup Language - a set of rules for encoding documents in both machine and human format. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Type Method </string>
+          <key>definitions</key>
+          <string>Method that’ defines on the type itself rather than an instance .</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Property List</string>
+          <key>definitions</key>
+          <string>Organizes data into named values and listof values. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Enumeration</string>
+          <key>definitions</key>
+          <string>Defines a common type for a group of related values and enables you to work with those values in a type safe way within your code.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>.SymmetricDifference</string>
+          <key>definitions</key>
+          <string>Creates a new set with values in either, but not both. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>While Loops</string>
+          <key>definitions</key>
+          <string>Performs a set of statements until a condition becomes false.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Structures</string>
+          <key>definitions</key>
+          <string>General-purpose, flexible constructs that become the building blocks of your programs code. &quot;Value Type&quot;</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Classes</string>
+          <key>definitions</key>
+          <string>General-purpose, flexible constructs that become the building blocks of your programs code. &quot;Reference TYPE&quot; </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>AS?</string>
+          <key>definitions</key>
+          <string>This Operator allows you to check if an object of one type is castable to another. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>For In Loop</string>
+          <key>definitions</key>
+          <string>Loop to iterate over a sequence such as items in an array, ranges of numbers, or characters in a string.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Instance</string>
+          <key>definitions</key>
+          <string>Is an object.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Value Type</string>
+          <key>definitions</key>
+          <string>A type where a value is copied when it is assigned to a variable or constant, or when it is passed to a function. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>One Side Range</string>
+          <key>definitions</key>
+          <string>The operator has a value on only one side.  [2...]</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Variadic</string>
+          <key>definitions</key>
+          <string>Accepts zero or more values of a specifc type. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Functions</string>
+          <key>definitions</key>
+          <string>Self-contained chunks of code that perform a specific task.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Optional Binding</string>
+          <key>definitions</key>
+          <string>Optional Binding is used to find out whether an optional contains a value.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Return Type</string>
+          <key>definitions</key>
+          <string>Optional value that the function will pass back. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Continue </string>
+          <key>definitions</key>
+          <string>Tells a loop to stop what it is doing and start again at the beginning of the next interation.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Closures </string>
+          <key>definitions</key>
+          <string>Self-contained blocks of functionality that can be passed around and used in code.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Ternary Conditional Operator</string>
+          <key>definitions</key>
+          <string>A special operator with three parts which takes the from: question? Asnwer1 Answer2.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Half Open Range Operator </string>
+          <key>definitions</key>
+          <string>One sided form that only has the final value. [..&lt;2]</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Collection Types</string>
+          <key>definitions</key>
+          <string>Array, Set, Dictionary </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>AS!</string>
+          <key>definitions</key>
+          <string>Will result if in a crash if cast fails.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Fallthrough </string>
+          <key>definitions</key>
+          <string>Causes code execution to move directly to the statements inside the next case no matter what.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Properties</string>
+          <key>definitions</key>
+          <string>Assiocates values with a particular class, struture or enumeration</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Stored Property</string>
+          <key>definitions</key>
+          <string>A constant or a variable that is stored as art of an instance of a particular class or structure. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Lazy Stored Property </string>
+          <key>definitions</key>
+          <string>A property whose initail value is not calcuated until the first time it is used. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Computed Properties</string>
+          <key>definitions</key>
+          <string>Provide a getter and  an optional setter to retrieve and set other properties and values indirectly. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Read-Only Computed Property</string>
+          <key>definitions</key>
+          <string>Always returns a value, and can be accessed through dot syntax, but cannot be set to a different value. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Property Observers</string>
+          <key>definitions</key>
+          <string>Observe and respond to changes in a property’s value</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Global Variables</string>
+          <key>definitions</key>
+          <string>Variaibles that are defined outside of any function, method, closure or type context. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Local Variables</string>
+          <key>definitions</key>
+          <string>Variables that are defined within a function, method, or closure context. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Type Propeties</string>
+          <key>definitions</key>
+          <string>Properties that belong to an instance of a particular type.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Methods</string>
+          <key>definitions</key>
+          <string>Functions that are associated with a particular type. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Instance Methods</string>
+          <key>definitions</key>
+          <string>Functions that belong to instances of a particular class, structure, or enumeration. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Self Property </string>
+          <key>definitions</key>
+          <string>Equivalent to the instance itself. Used to refer to the current instance within its own instance method.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Subscripts</string>
+          <key>definitions</key>
+          <string>Used to set and retrieve values by index with out needing separate methods for setting retrieval. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Inheritance</string>
+          <key>definitions</key>
+          <string>Fundamental behavior that differentiates classes from other types in swift </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Base Class</string>
+          <key>definitions</key>
+          <string>Any class that does not inherit from another class</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Subclassing</string>
+          <key>definitions</key>
+          <string>The act of basing a new class on an existing class. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Overrinding </string>
+          <key>definitions</key>
+          <string>A subclass that provides its own custom implementatiion of an instance method, type method, instance property, type property, or subscript that it would otherwise inherit from a superclass</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Initialization </string>
+          <key>definitions</key>
+          <string>The process of prepariong an instance of a class, structure or enumeration for use.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Initializers</string>
+          <key>definitions</key>
+          <string>Are called to create a new instance of a particular type. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Optional Chaning</string>
+          <key>definitions</key>
+          <string>A process for querying and calling properties, methods and subscipts on an optional that might currently be nil. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Error Handling </string>
+          <key>definitions</key>
+          <string>The process of responding to and recovering from error conditions in your program. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Type Casting</string>
+          <key>definitions</key>
+          <string>A way to check the type of an instance, or treat that instance as a different superclass from somewhere else in its own class hierarchy.</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Extensions</string>
+          <key>definitions</key>
+          <string>Add new functionality to an existing class, structure, enumeration, or protocol type. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Protocols</string>
+          <key>definitions</key>
+          <string>A blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Generic</string>
+          <key>definitions</key>
+          <string>Enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define</string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Acess Control</string>
+          <key>definitions</key>
+          <string>Restrics access to parts of your code from code in other source files and modules </string>
+    </dict>
+    <dict>
+          <key>terms</key>
+          <string>Bitwise Operators</string>
+          <key>definitions</key>
+          <string>Enable you to manipulate the individual raw data bits within a data structure .</string>
+    </dict>
+</array>
+</plist>

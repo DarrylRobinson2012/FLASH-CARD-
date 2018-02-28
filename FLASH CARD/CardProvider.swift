@@ -151,7 +151,7 @@ class studySession: session {
         card.remove(at: 0)
         print(card)
        
-        if count >= 10{
+        if count == card.count{
             doYouWantToStop()
         }
     }
@@ -165,6 +165,7 @@ class studySession: session {
     }*/
     //Ask the user do they want to stop
     func doYouWantToStop(){
+       var done = true
     }
  
     init(card: [flashCards]) {

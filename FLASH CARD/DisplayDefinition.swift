@@ -15,13 +15,13 @@ class view2: UIViewController {
     @IBOutlet weak var view2ND: UIView!
     var quiz : studySession
     var keyword: String?
-
-    
+    var definit: String?
+    var definit2: String?
     // Grabs the plist and converts it to a format the code accepts it.
     required init?(coder aDecoder: NSCoder) {
         
         do {
-            let array = try PlistConverter.array(fromFile: "SwiftVocab", ofType: "plist")
+            let array = try PlistConverter.array(fromFile: "Vocab", ofType: "plist")
             let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
             quiz = studySession(card: termsList)
             } catch let error {
@@ -38,10 +38,6 @@ class view2: UIViewController {
         super.viewDidLoad()
         quiz.nextCard()
         refreshDisplay()
-      
-     
-    
-
         // Do any additional setup after loading the view.
     }
 
@@ -69,17 +65,27 @@ class view2: UIViewController {
     
     func showTerm() {
     //shift to the term
-        dismiss(animated: true, completion: nil)
+       /* dismiss(animated: true, completion: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "vocabView") as! UIViewController
         self.present(vc, animated: true, completion: nil)
        performSegue(withIdentifier: "vocabView", sender: self)
+        */
+       
+        quiz.nextCard()
+        refreshDisplay()
     }
     
     func showEmptyTerm(){
     //shift to the empty term page
+       /*
         dismiss(animated: true, completion: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "insertTerm") as! UIViewController
         self.present(vc, animated: true, completion: nil)
+        performSegue(withIdentifier: "insertTerm", sender: self)
+      */
+      
+        quiz.nextCard()
+        refreshDisplay()
         
     }
     
@@ -87,7 +93,11 @@ class view2: UIViewController {
         if let destination = segue.destination as? termController {
             destination.term = keyword
         }
+        if let destination = segue.destination as? InsertTermController {
+            destination.term = keyword
+        }
     }
+    
     
     func showStartQuiz() {
         view2ND.isHidden = false
@@ -98,10 +108,14 @@ class view2: UIViewController {
    
     func refreshDisplay() {
         defintion.text = quiz.test.cardTerm
-        keyword = quiz.test.cardKeyword
+        mainLabel.text = quiz.test.cardKeyword
     }
 
-        
+    func disablethedef() {
+        definit = nil
+        defintion = nil 
+    }
+
 
     /*
     // MARK: - Navigation

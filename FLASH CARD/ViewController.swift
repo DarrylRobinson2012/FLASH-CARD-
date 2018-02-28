@@ -14,12 +14,34 @@ class ViewController: UIViewController {
         //two labels and a 5 sec delay
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var positioningLabel: UILabel!
-    
+    var quiz: studySession
 
+    var term: String?
+    var definition: String?
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        do {
+            let array = try PlistConverter.array(fromFile: "Vocab", ofType: "plist")
+            let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
+            quiz = studySession(card: termsList)
+        } catch let error {
+            
+            fatalError("\(error)")
+        }
+        super.init(coder: aDecoder)
+        
+        
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadNextViewWithDelay(seconds: 5)
+            
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -37,15 +59,36 @@ class ViewController: UIViewController {
         
         // Executes the nextRound method at the dispatch time on the main queue
         DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+           // self.sendTheStrings()
             self.closeView()
+            
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? view2 {
+            destination.definit = definition
+            destination.keyword = term
+        }
+    }
+    func sendTheStrings(){
+        performSegue(withIdentifier: "launchMode", sender: self)
+        
+    }
     
+    func fillTheStrings() {
+        quiz.nextCard()
+        term = quiz.test.cardKeyword
+        definition = quiz.test.cardTerm
+        
+    }
     
     func closeView() {
         dismiss(animated: true, completion: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Definition") as! UIViewController
         self.present(vc, animated: true, completion: nil)
+        definition = nil
+        
     }
 }
+
 

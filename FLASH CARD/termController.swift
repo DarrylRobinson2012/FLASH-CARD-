@@ -14,11 +14,12 @@ class termController: UIViewController {
     @IBOutlet weak var Definitionagain: UIButton!
     @IBOutlet weak var View4: UIImageView!
     var term: String?
+    var def: String?
     var quiz : studySession
     required init?(coder aDecoder: NSCoder) {
         
         do {
-            let array = try PlistConverter.array(fromFile: "SwiftVocab", ofType: "plist")
+            let array = try PlistConverter.array(fromFile: "Vocab", ofType: "plist")
             let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
             quiz = studySession(card: termsList)
         } catch let error {
@@ -53,11 +54,20 @@ class termController: UIViewController {
         dismiss(animated: true, completion: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Definition") as! UIViewController
         self.present(vc, animated: true, completion: nil)
-        
+        performSegue(withIdentifier: "newDefinition", sender: self)
+
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? view2 {
+           destination.definit2 = "huh"
+            destination.definit = nil
+        }
+    }
     func refreshDisplay() {
+       //performSegue(withIdentifier: "newDefinition", sender: self)
         Term.text = quiz.test.cardKeyword
+        def = quiz.test.cardTerm
     }
     /*
     // MARK: - Navigation
