@@ -49,7 +49,7 @@ class inventoryUnarchiver {
         
         var inventory: [flashCards] = []
         for value in array {
-            if let term = value["terms"] as? String, let definition = value["definitions"] as? String {
+            if let term = value["term"] as? String, let definition = value["definition"] as? String {
                 let card = flashCards(term: term, definition: definition )
                 inventory.append(card)
             }
@@ -61,7 +61,7 @@ class inventoryUnarchiver {
 
 //Rules for each round
 protocol quizRules {
-    var t1: flashCards {get set}
+    var r1: flashCards {get set}
     var d1: flashCards  {get set}
     var cardKeyword: String {get set }
     var cardTerm: String { get set }
@@ -71,8 +71,8 @@ protocol quizRules {
 
 }
 //Actual quiz
-class Quiz: quizRules {
-    var t1: flashCards
+class Quiz: quizRules   {
+    var r1: flashCards
     var d1: flashCards
     var cardKeyword: String
     var cardTerm: String
@@ -86,8 +86,8 @@ class Quiz: quizRules {
             return false
         }
     }*/
-    init(t1: flashCards, d1: flashCards, cardKeyword: String, cardTerm: String){
-            self.t1 = t1
+    init(r1: flashCards, d1: flashCards, cardKeyword: String, cardTerm: String){
+            self.r1 = r1
             self.d1 = d1
             self.cardKeyword = cardKeyword
             self.cardTerm = cardTerm
@@ -101,9 +101,12 @@ class Quiz: quizRules {
 //RULES FOR EACH SESSION
 protocol session {
     var card: [flashCards ] {get set}
+    var previousCards: [flashCards] { get set }
     var test: Quiz {get set }
     var wholecard: [flashCards] {get set}
-    var count: Int {get set}
+    var count:Int {get set}
+    var count2:Int {get set}
+
     var isOver : Bool {get set}
     
     func begin()
@@ -116,9 +119,11 @@ protocol session {
 //The actual Study Session
 class studySession: session {
     var card: [flashCards]
+    var previousCards: [flashCards]
     var test: Quiz
     var wholecard: [flashCards]
     var count = 0
+    var count2 = 0
     var isOver = false
     
     func begin() {
@@ -139,22 +144,41 @@ class studySession: session {
         }
         return shuffled
     }
+    
+    
     //ends the session
     func endQuiz() {
         isOver = true
     }
     //loads the next term
     func nextCard() {
+        
+        //card = shuffleTheTerms(array: card)
+        
+        test = Quiz(r1: card[count], d1: card[count], cardKeyword: card[count].term, cardTerm: card[count].definition)
+    
+       
         count += 1
-        card = shuffleTheTerms(array: card)
-        test = Quiz(t1: card[0], d1: card[0], cardKeyword: card[0].term, cardTerm: card[0].definition)
-        card.remove(at: 0)
         print(card)
        
         if count == card.count{
             doYouWantToStop()
         }
     }
+    
+    //previous card
+    func previousCard() {
+        count -= 1
+        test = Quiz(r1: card[count ], d1: card[count], cardKeyword: card[count].term, cardTerm: card[count].definition)
+        
+        
+        
+        
+        
+    }
+    
+    
+    
         //check answer
     func checkTerm(){} //-> Bool {
            /* let result = test.check()
@@ -170,8 +194,9 @@ class studySession: session {
  
     init(card: [flashCards]) {
         self.card = card
+        self.previousCards = card
         self.wholecard = card
-        self.test = Quiz(t1: card[0], d1: card[0], cardKeyword: card[0].term, cardTerm: card[0].definition)
+        self.test = Quiz(r1: card[0], d1: card[0], cardKeyword: card[0].term, cardTerm: card[0].definition)
     
     }
 }

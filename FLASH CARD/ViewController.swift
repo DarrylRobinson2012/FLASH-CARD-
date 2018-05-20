@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         
         do {
-            let array = try PlistConverter.array(fromFile: "Vocab", ofType: "plist")
+            let array = try PlistConverter.array(fromFile: "SwiftVocab2", ofType: "plist")
             let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
             quiz = studySession(card: termsList)
         } catch let error {

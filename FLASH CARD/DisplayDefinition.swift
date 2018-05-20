@@ -21,7 +21,7 @@ class view2: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         
         do {
-            let array = try PlistConverter.array(fromFile: "Vocab", ofType: "plist")
+            let array = try PlistConverter.array(fromFile: "SwiftVocab2", ofType: "plist")
             let termsList = try inventoryUnarchiver.eventInventory(fromArray: array)
             quiz = studySession(card: termsList)
             } catch let error {
@@ -74,7 +74,7 @@ class view2: UIViewController {
         quiz.nextCard()
         refreshDisplay()
     }
-    
+    //swipedown i think
     func showEmptyTerm(){
     //shift to the empty term page
        /*
@@ -84,7 +84,7 @@ class view2: UIViewController {
         performSegue(withIdentifier: "insertTerm", sender: self)
       */
       
-        quiz.nextCard()
+        quiz.previousCard()
         refreshDisplay()
         
     }

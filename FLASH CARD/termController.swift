@@ -11,7 +11,7 @@ import UIKit
 class termController: UIViewController {
     @IBOutlet weak var Term: UILabel!
     @IBOutlet weak var Next: UIButton!
-    @IBOutlet weak var Definitionagain: UIButton!
+    @IBOutlet weak var previousCard: UIButton!
     @IBOutlet weak var View4: UIImageView!
     var term: String?
     var def: String?

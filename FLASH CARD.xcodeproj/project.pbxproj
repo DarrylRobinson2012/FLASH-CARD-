@@ -20,10 +20,10 @@
 		46216391202382C800D6277E /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 46216390202382C800D6277E /* Back.png */; };
 		462163932023D09400D6277E /* incorrect.ico in Resources */ = {isa = PBXBuildFile; fileRef = 462163922023D09400D6277E /* incorrect.ico */; };
 		462163952023D27B00D6277E /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 462163942023D27B00D6277E /* correct.png */; };
-		462EDF5B204724210037BA68 /* Vocab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 462EDF5A204724210037BA68 /* Vocab.plist */; };
 		467117B4202A4A79001E2244 /* DisplayDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467117B3202A4A79001E2244 /* DisplayDefinition.swift */; };
 		46C8BB2B203DE6B000F21207 /* TermFinalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C8BB2A203DE6B000F21207 /* TermFinalController.swift */; };
 		46E314F9202A548600E85FF9 /* CardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E314F8202A548600E85FF9 /* CardProvider.swift */; };
+		46EA642820B167CB00AFCB27 /* SwiftVocab2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46EA642720B167CA00AFCB27 /* SwiftVocab2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +63,10 @@
 		46216390202382C800D6277E /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back.png; path = ../../../../Downloads/Back.png; sourceTree = "<group>"; };
 		462163922023D09400D6277E /* incorrect.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = incorrect.ico; path = ../../../../Downloads/incorrect.ico; sourceTree = "<group>"; };
 		462163942023D27B00D6277E /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.png; path = ../../../../Downloads/correct.png; sourceTree = "<group>"; };
-		462EDF5A204724210037BA68 /* Vocab.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Vocab.plist; sourceTree = "<group>"; };
 		467117B3202A4A79001E2244 /* DisplayDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDefinition.swift; sourceTree = "<group>"; };
 		46C8BB2A203DE6B000F21207 /* TermFinalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermFinalController.swift; sourceTree = "<group>"; };
 		46E314F8202A548600E85FF9 /* CardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProvider.swift; sourceTree = "<group>"; };
+		46EA642720B167CA00AFCB27 /* SwiftVocab2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SwiftVocab2.plist; path = ../../../../Downloads/SwiftVocab2.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 		4621635C202229E800D6277E /* FLASH CARD */ = {
 			isa = PBXGroup;
 			children = (
+				46EA642720B167CA00AFCB27 /* SwiftVocab2.plist */,
 				4621635D202229E800D6277E /* AppDelegate.swift */,
-				462EDF5A204724210037BA68 /* Vocab.plist */,
 				461D854B2030235100D52C5D /* ViewController.swift */,
 				46E314F8202A548600E85FF9 /* CardProvider.swift */,
 				467117B3202A4A79001E2244 /* DisplayDefinition.swift */,
@@ -266,8 +266,8 @@
 				462163932023D09400D6277E /* incorrect.ico in Resources */,
 				462163952023D27B00D6277E /* correct.png in Resources */,
 				4621638D20222C1800D6277E /* indexcard.png in Resources */,
-				462EDF5B204724210037BA68 /* Vocab.plist in Resources */,
 				46216391202382C800D6277E /* Back.png in Resources */,
+				46EA642820B167CB00AFCB27 /* SwiftVocab2.plist in Resources */,
 				4621638F202380D900D6277E /* Next.png in Resources */,
 				46216363202229E800D6277E /* Main.storyboard in Resources */,
 			);
